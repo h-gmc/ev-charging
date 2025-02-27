@@ -1,0 +1,12 @@
+[package]
+name = "cpo-charging-forecast"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = "0.4"            # For working with time-series timestamps
+csv = "1.2"              # For reading CSV files
+serde = { version = "1.0", features = ["derive"] }  # Serialization/Deserialization
+serde_json = "1.0"        # JSON support
+augurs = { version = "0.6.0", features = ["forecaster", "ets", "mstl", "seasons", "outlier", "clustering", "dtw", "prophet", "prophet-wasmstan"] }
+plotters = "0.3"
